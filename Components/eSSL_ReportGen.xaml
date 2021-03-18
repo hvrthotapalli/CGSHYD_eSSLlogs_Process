@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1096,4090.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>987.2,4090.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>eSSL_ReportGen_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -144,7 +144,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="852,367.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="410.4,367.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -236,7 +236,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                <Assign DisplayName="Assign  &lt;Formated system date&gt;" sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_9">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:String[]">[format_sysDate]</OutArgument>
                   </Assign.To>
@@ -244,7 +244,7 @@
                     <InArgument x:TypeArguments="s:String[]">[Split(sysDate,"-")]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign DisplayName="Assign &lt;spliting Previous date&gt;" sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:String[]">[formatedDate]</OutArgument>
                   </Assign.To>
@@ -252,7 +252,7 @@
                     <InArgument x:TypeArguments="s:String[]">[Split(PrevDay,"-")]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign DisplayName="Assign &lt;saving first number i.e 0 from from date&gt;" sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_7">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[startWithZero]</OutArgument>
                   </Assign.To>
@@ -260,7 +260,7 @@
                     <InArgument x:TypeArguments="x:Int32">[CInt(formatedDate(0)(0).ToString)]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign DisplayName="Assign &lt;saving first number i.e 0 from previous date&gt;" sap:VirtualizedContainerService.HintSize="768.8,60" sap2010:WorkflowViewState.IdRef="Assign_10">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[startWithZero_1]</OutArgument>
                   </Assign.To>
@@ -283,12 +283,12 @@
                   <Flowchart.StartNode>
                     <x:Reference>__ReferenceID4</x:Reference>
                   </Flowchart.StartNode>
-                  <FlowDecision x:Name="__ReferenceID4" Condition="[startWithZero = 0 AND startWithZero_1 = 0]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                  <FlowDecision x:Name="__ReferenceID4" Condition="[startWithZero = 0 AND startWithZero_1 = 0]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <av:Point x:Key="ShapeLocation">260.641666666667,127.7</av:Point>
-                        <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
+                        <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
                         <av:PointCollection x:Key="TrueConnector">260.641666666667,171.3 140,171.3 140,305.6</av:PointCollection>
                         <av:PointCollection x:Key="FalseConnector">339.041666666667,171.3 440,171.3 440,246.4</av:PointCollection>
                       </scg:Dictionary>
@@ -594,12 +594,12 @@
                       </FlowStep>
                     </FlowDecision.True>
                     <FlowDecision.False>
-                      <FlowDecision x:Name="__ReferenceID2" Condition="[startWithZero = 0 AND startWithZero_1 &lt;&gt; 0]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                      <FlowDecision x:Name="__ReferenceID2" Condition="[startWithZero = 0 AND startWithZero_1 &lt;&gt; 0]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <av:Point x:Key="ShapeLocation">400.8,246.4</av:Point>
-                            <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
+                            <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
                             <av:PointCollection x:Key="TrueConnector">400.8,290 360,290 360,385.6</av:PointCollection>
                             <av:PointCollection x:Key="FalseConnector">479.2,290 580,290 580,455.6</av:PointCollection>
                           </scg:Dictionary>
@@ -912,7 +912,7 @@
                                 <av:Size x:Key="ShapeSize">200,68.8</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="Sequence &lt;From Dste &amp; To Date Starting with &quot;0&quot;&gt;" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <Sequence DisplayName="Sequence &lt;From Dste &amp; To Date Starting with &quot;0&quot;&gt;" sap:VirtualizedContainerService.HintSize="400,1104" sap2010:WorkflowViewState.IdRef="Sequence_15">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1107,7 +1107,7 @@
                                   </ui:Target>
                                 </ui:SelectItem.Target>
                               </ui:SelectItem>
-                              <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select &lt;To Month&gt;" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_29" Item="[format_sysDate(0).ToString]">
+                              <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select &lt;To Month&gt;" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_29" Item="[format_sysDate(1).ToString]">
                                 <ui:SelectItem.Items>
                                   <scg:List x:TypeArguments="x:String" Capacity="16">
                                     <x:String>Jan</x:String>
@@ -1135,7 +1135,7 @@
                                   </ui:Target>
                                 </ui:SelectItem.Target>
                               </ui:SelectItem>
-                              <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select &lt;To Year&gt;" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_30" Item="[format_sysDate(0).ToString]">
+                              <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select &lt;To Year&gt;" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_30" Item="[format_sysDate(2).ToString]">
                                 <ui:SelectItem.Items>
                                   <scg:List x:TypeArguments="x:String" Capacity="50">
                                     <x:String>1981</x:String>
@@ -1635,7 +1635,7 @@
               </Sequence>
               <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="810.4,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1071.2,145.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,145.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
